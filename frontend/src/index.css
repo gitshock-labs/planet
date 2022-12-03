@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://storageapi.fleek.co/82da0466-48d9-4f6f-a026-269ea27f0827-bucket/planet/cloud.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container {
+    max-width: initial !important;
+    height: 100vh;
+}
+
+.content {
+    
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content> div {
+    
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 50px 0;
+    background-color: #ffffffe0;
+    border-radius: 15px;
+}
+
+.inline {
+    padding: 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline  button.mint {
+    width: 102px;
+}
+
+.count {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.imgWrapper {
+    height: 234px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgWrapper img {
+    width: 100px;
+}

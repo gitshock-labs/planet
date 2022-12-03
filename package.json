@@ -1,0 +1,43 @@
+{
+  "name": "planet",
+  "version": "1.0.0",
+  "description": "An nft project about planet",
+  "private": true,
+  "directories": {
+    "test": "test"
+  },
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run ./scripts/deploy.js --network gitshock",
+    "open:testnet": "hardhat --network testnet openBox --uri https://storageapi.fleek.co/82da0466-48d9-4f6f-a026-269ea27f0827-bucket/plantbox-random/",
+    "start:webapp": "yarn workspace frontend run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhiteMatrixTech/planet.git"
+  },
+  "keywords": [
+    "hardhat",
+    "ethereum",
+    "hackathon"
+  ],
+  "author": "Nomic Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhiteMatrixTech/planet/issues"
+  },
+  "homepage": "https://github.com/WhiteMatrixTech/planet.git#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-waffle": "^2.0.0",
+    "@openzeppelin/contracts": "^4.5.0",
+    "chai": "^4.2.0",
+    "ethereum-waffle": "^3.1.1",
+    "ethers": "^5.0.0",
+    "hardhat": "^2.0.4",
+    "husky": "^4.2.5"
+  }
+}
